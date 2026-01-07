@@ -62,11 +62,11 @@ const loc =`https://geocoding-api.open-meteo.com/v1/search?name=${user_input.val
    
     let timestamp = weather_info.current_weather.time;
 
-// Split the string at the "T"
+
 let parts = timestamp.split("T"); 
 
- date.innerText = parts[0]; // "2026-01-07"
-Humidity.innerText = parts[1]; // "10:45"
+ date.innerText = parts[0]; 
+Humidity.innerText = parts[1];
 
 if(!current_weather.isday) {
     weather_icon.innnerText = 🌙;
@@ -78,5 +78,6 @@ if(!current_weather.isday) {
 
 
 }
+
 
 start();
